@@ -1,0 +1,69 @@
+/* navbar start */
+.dropdown-menu{
+  min-width: 7rem !important;
+}
+
+.navbar-brand{
+  font-family: "Playwrite NZ", cursive;
+}
+.nav-link, .dropdown{
+  font-family: "Playwrite NG Modern", cursive;
+  font-weight: bold !important;
+  font-size: 15px !important;
+}
+.nav-link:hover{
+  color: rgb(219, 202, 202) !important;
+  text-shadow:0px 1px black !important;
+  /* font-size: 16px !important; */
+}
+.dropdown-menu[data-bs-popper] {
+  left: 7px !important;
+}
+.col-form-label{
+  font-weight: bold;
+}
+/* navbar end */
+
+
+
+
+
+/* login-register */
+  .dd1{
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px 13px #f4f2f2;
+    box-sizing: content-box;
+  }
+  .register{
+    background-image: url("./assets/register.avif");
+    background-size: cover;
+
+  }
+  .login{
+
+    background-image: url("./assets/loginBg1.jpg");
+    background-size: cover;
+    backdrop-filter: blur(90px);
+  }
+  /* login register */
+
+  @media screen and (min-width: 992px){
+    .create-btn{
+      display: none;
+    }
+    .login{
+      background-image: url("./assets/loginBg.jpg");
+    }
+  }
+  @media screen and (max-width: 500px){
+    table{
+      font-size: 12px;
+      }
+      th,td{
+        padding: 4px;
+      }
+      .navbar-brand h5{
+        font-size: 14px;
+        line-height: 0px;
+      }
+  }
