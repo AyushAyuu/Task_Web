@@ -53,18 +53,15 @@ const Login = () => {
   return (
     <>
       <section className="dd">
-        <div className="container h-100 p-4">
-          <div className="row d-flex justify-content-center align-items-center p-5">
+        <div className="container-lg container-md-fluid h-100 p-lg-4 p-md-3">
+          <div className="row d-flex justify-content-center align-items-center p-lg-5">
             <div className="col-lg-12 col-xl-11">
               <div className="card text-black dd1 border-0">
-                <div className="card-body rounded-5 p-md-4 login">
-                  <div className="row justify-content-center">
-                    <div className="col-md-10 col-lg-6 col-xl-7  order-2 order-lg-1"></div>
-                    <div className="col-md-10 col-lg-6 col-xl-5 order-1 order-lg-2">
-                      <form
-                        onSubmit={handledLogin}
-                        className="mx-1 mx-md-4 offset-5"
-                      >
+                <div className="card-body rounded-lg-5 p-lg-4 p-md-5 login">
+                  <div className="row justify-content-center p-5">
+                    <div className="col-lg-6 col-xl-7 d-md-none  order-2 order-lg-1"></div>
+                    <div className="col-md-12 col-lg-6 col-xl-5 order-1 order-lg-2">
+                      <form onSubmit={handledLogin}>
                         <p className="text-center  h1 fw-bold mb-4 mx-1 mx-md-4 ">
                           Login
                         </p>
