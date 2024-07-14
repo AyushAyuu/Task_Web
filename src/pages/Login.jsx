@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 const Login = () => {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   // for login purpose without login not go to home page
@@ -15,7 +16,7 @@ const Login = () => {
   // for login form
   const handledLogin = (e) => {
     e.preventDefault();
-    console.log("login");
+    setLoading(true);
     if (validate()) {
       // fetch api
       // fetch(`http://localhost:4000/users/${userName}`)
@@ -31,6 +32,7 @@ const Login = () => {
           }
         })
         .catch((err) => {
+          setLoading(false);
           toast.error("Login Failed due to :" + err.message);
         });
     }
@@ -54,13 +56,13 @@ const Login = () => {
     <>
       <section className="dd">
         <div className="container-lg container-md-fluid h-100 p-lg-4 p-md-3">
-          <div className="row d-flex justify-content-center align-items-center p-lg-5">
+          <div className="row d-flex justify-content-center align-items-center p-lg-4 px-md-5">
             <div className="col-lg-12 col-xl-11">
               <div className="card text-black dd1 border-0">
-                <div className="card-body rounded-lg-5 p-lg-4 p-md-5 login">
-                  <div className="row justify-content-center p-5">
-                    <div className="col-lg-6 col-xl-7 d-md-none  order-2 order-lg-1"></div>
-                    <div className="col-md-12 col-lg-6 col-xl-5 order-1 order-lg-2">
+                <div className="card-body rounded-lg-5 h-100 login">
+                  <div className="row justify-content-center p-md-4 py-sm-5">
+                    <div className="col-lg-6 col-xl-7 d-md-block d-none  order-2 order-lg-1"></div>
+                    <div className="col-md-12 col-lg-6 col-xl-5 order-1 order-lg-2 p-2">
                       <form onSubmit={handledLogin}>
                         <p className="text-center  h1 fw-bold mb-4 mx-1 mx-md-4 ">
                           Login
@@ -110,15 +112,17 @@ const Login = () => {
                         <div className="d-flex justify-content-center mx-4 mb-1 mb-lg-3">
                           <button
                             type="submit"
-                            className="btn btn-primary btn-lg"
+                            className="loginBtn p-2 w-75 fw-bold"
                           >
-                            Login
+                            {loading ? "Loading..." : "Login"}
                           </button>
                         </div>
 
                         <div className="d-flex justify-content-center mx-4 mb-1 mb-lg-3">
-                          Don't have an account?
-                          <a href="/register"> Register</a>
+                          <p className="fw-light mx-auto">
+                            Don't have an account?{" "}
+                            <a href="/register"> Register</a>
+                          </p>
                         </div>
                       </form>
                     </div>

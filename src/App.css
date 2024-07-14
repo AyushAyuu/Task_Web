@@ -40,10 +40,30 @@
 
   }
   .login{
-
+    height: 100vh;
     background-image: url("./assets/loginBg1.jpg");
     background-size: cover;
     backdrop-filter: blur(90px);
+  }
+  .loginBtn, .registerBtn {
+    color: white;
+    transition: .2s ease-in-out;
+    border-left: 3px transparent solid;
+    border-right: 3px transparent solid;
+  }
+  .loginBtn{
+    background-color: rgb(73, 73, 192);
+  }
+  .registerBtn{
+    background-color: green;
+  }
+  
+  .loginBtn:hover , .registerBtn:hover {
+    color: black;
+	background-color: white;
+  border-radius: 25px;
+	border-left: 20px solid black;
+	border-right:20px solid black;
   }
   /* login register */
 
@@ -66,4 +86,11 @@
         font-size: 14px;
         line-height: 0px;
       }
+      .registerCheck{
+        font-size: 13px;
+      }
+  }
+
+  @media screen and (max-width: 500px){
+
   }

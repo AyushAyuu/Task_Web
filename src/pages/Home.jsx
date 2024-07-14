@@ -83,7 +83,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="container my-4 py-5">
+      <div className="container-lg container-fluid my-4 py-5">
         <div className="d-flex mb-3">
           <div className="create-btn">
             <Link
@@ -108,7 +108,7 @@ const Home = () => {
         <table className="table table-striped">
           <thead>
             <tr className="text-center">
-              <th>TM-ID</th>
+              <th>ID</th>
               <th>Task</th>
               <th>Date</th>
               <th>Time</th>

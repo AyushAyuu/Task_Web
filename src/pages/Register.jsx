@@ -33,10 +33,10 @@ const Register = () => {
     <>
       <section className="dd">
         <div className="container h-100">
-          <div className="row d-flex justify-content-center align-items-center h-100 p-4">
+          <div className="row d-flex justify-content-center align-items-center h-100 py-4">
             <div className="col-lg-12 col-xl-11">
               <div className="card text-black border-0 dd1">
-                <div className="card-body rounded-5 p-md-4 register">
+                <div className="card-body p-md-4 register">
                   <div className="row justify-content-center">
                     <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
                       <p className="text-center text-white h1 fw-bold mb-4 mx-1 mx-md-4 mt-4">
@@ -45,7 +45,6 @@ const Register = () => {
 
                       <form className="mx-1 mx-md-4" onSubmit={handleSubmit}>
                         <div className="d-flex flex-row align-items-center mb-2">
-                          <i className="fas fa-user fa-lg me-3 fa-fw"></i>
                           <div
                             data-mdb-input-init
                             className="form-outline flex-fill"
@@ -69,7 +68,6 @@ const Register = () => {
                           </div>
                         </div>
                         <div className="d-flex flex-row align-items-center mb-2">
-                          <i className="fas fa-user fa-lg me-3 fa-fw"></i>
                           <div className="form-outline flex-fill">
                             <label className="form-label text-white">
                               Full Name
@@ -87,7 +85,6 @@ const Register = () => {
                         </div>
 
                         <div className="d-flex flex-row align-items-center mb-2">
-                          <i className="fas fa-envelope fa-lg me-3 fa-fw"></i>
                           <div className="form-outline flex-fill">
                             <label className="form-label text-white">
                               Your Email
@@ -105,7 +102,6 @@ const Register = () => {
                         </div>
 
                         <div className="d-flex flex-row align-items-center mb-2">
-                          <i className="fas fa-lock fa-lg me-3 fa-fw"></i>
                           <div className="form-outline flex-fill">
                             <label className="form-label text-white">
                               Password
@@ -129,23 +125,25 @@ const Register = () => {
                             value=""
                             required
                           />
-                          <label className="form-check-label text-white">
-                            I agree all statements in{" "}
-                            <a href="#!">Terms of service</a>
+                          <label className="form-check-label text-white ">
+                            <p className="fw-light registerCheck">
+                              I agree all statements in{" "}
+                              <a href="#!">Terms of service</a>
+                            </p>
                           </label>
                         </div>
 
                         <div className="d-flex justify-content-center mx-4 mb-1 mb-lg-3">
                           <button
                             type="submit"
-                            className="btn btn-primary btn-lg"
+                            className="registerBtn p-2 w-50 fw-bold"
                           >
                             Register
                           </button>
                           <a
                             href="/login"
                             type="button"
-                            className="btn btn-danger btn-lg mx-3"
+                            className="btn btn-danger rounded-0 btn-lg mx-3"
                           >
                             Cancel
                           </a>
