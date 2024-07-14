@@ -22,9 +22,9 @@ const Navbar = () => {
         <div>
           <Link className="navbar-brand d-flex p-0" to="/">
             <img
-              src="./src/assets/logo.png"
+              src="./src/assets/ekg-512.webp"
               alt=""
-              width={60}
+              width={55}
               height={55}
               className="me-2 mb-2"
             />
