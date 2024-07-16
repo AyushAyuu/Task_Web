@@ -17,17 +17,18 @@ const Navbar = () => {
   }, [sessionStorage.getItem("userName")]);
 
   return (
-    <nav className="navbar navbar-expand-lg box-shadow bg-dark p-0 pt-2 position-fixed top-0 w-100">
+    <nav className="navbar navbar-expand-lg box-shadow bg-dark p-0 py-2 position-fixed top-0 w-100">
       <div className="container-lg container-fluid d-flex">
         <div>
           <Link className="navbar-brand d-flex p-0" to="/">
-            <img
-              src="public/assets/ekg-512.webp"
+            {/* <img
+              src="src/assets/ekg-512.webp"
               alt=""
               width={55}
               height={55}
               className="me-2 mb-2"
-            />
+            /> */}
+            <div className="logo"></div>
             <h5 className="text-white text-bold my-auto">
               <b>Task Manager</b>
             </h5>
