@@ -55,7 +55,7 @@ const Login = () => {
   return (
     <>
       <section className="dd">
-        <div className="container-lg container-md-fluid h-100 p-lg-4 p-md-3">
+        <div className="container-lg container-md-fluid h-100 p-lg-4 p-md-3 py-5">
           <div className="row d-flex justify-content-center align-items-center p-lg-4 px-md-5">
             <div className="col-lg-12 col-xl-11">
               <div className="card text-black dd1 border-0">
