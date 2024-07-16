@@ -83,7 +83,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="container-lg container-fluid my-4 py-5">
+      <div className="container-lg container-fluid my-4 py-5 px-0">
         <div className="d-flex mb-3">
           <div className="create-btn">
             <Link
