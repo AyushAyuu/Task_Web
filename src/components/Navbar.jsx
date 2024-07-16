@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg box-shadow bg-dark p-0 py-2 position-fixed top-0 w-100">
-      <div className="container-lg container-fluid d-flex px-0">
+      <div className="container-lg container-fluid d-flex px-1">
         <div>
           <Link className="navbar-brand d-flex p-0" to="/">
             {/* <img
