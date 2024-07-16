@@ -35,7 +35,7 @@ const Register = () => {
         <div className="container h-100">
           <div className="row d-flex justify-content-center align-items-center h-100 py-5">
             <div className="col-lg-12 col-xl-11">
-              <div className="card text-black border-0 dd1">
+              <div className="card text-black border-0 my-md-0 my-5 dd1">
                 <div className="card-body p-md-4 register">
                   <div className="row justify-content-center">
                     <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">

@@ -58,7 +58,7 @@ const Login = () => {
         <div className="container-lg container-md-fluid h-100 p-lg-4 p-md-3 py-5">
           <div className="row d-flex justify-content-center align-items-center p-lg-4 px-md-5">
             <div className="col-lg-12 col-xl-11">
-              <div className="card text-black dd1 border-0">
+              <div className="card text-black dd1 border-0 my-md-0 my-5">
                 <div className="card-body rounded-lg-5 h-100 login">
                   <div className="row justify-content-center p-md-4 py-sm-5">
                     <div className="col-lg-6 col-xl-7 d-md-block d-none  order-2 order-lg-1"></div>
