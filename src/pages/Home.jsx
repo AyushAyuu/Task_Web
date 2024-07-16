@@ -108,7 +108,7 @@ const Home = () => {
         <table className="table table-striped">
           <thead>
             <tr className="text-center">
-              <th>ID</th>
+              {/* <th>ID</th> */}
               <th>Task</th>
               <th>Date</th>
               <th>Time</th>
@@ -120,7 +120,7 @@ const Home = () => {
             {task.map((tasks, index) => {
               return (
                 <tr key={index} className="text-center">
-                  <td>{tasks.id}</td>
+                  {/* <td>{tasks.id}</td> */}
                   <td className="text-capitalize">{tasks.Task}</td>
                   <td>{tasks.date}</td>
                   <td>{tasks.time}</td>
